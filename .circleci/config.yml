@@ -1,8 +1,9 @@
 version: 2.1
-  jobs:
-    build:
-      docker:
-        - image: jhale/computational-workflows # e.g. the primary container, where your job's commands are run
-      steps:
-        - checkout # check out the code from github in the project directory
-        - run: py.test-3 # run py.test-3 inside the container
+
+jobs:
+  build:
+    docker:
+      - image: jhale/computational-workflows # e.g. the primary container, where your job's commands are run
+    steps:
+      - checkout # check out the code from github in the project directory
+      - run: py.test-3 # run py.test-3 inside the container
