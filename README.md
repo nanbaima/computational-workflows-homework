@@ -21,6 +21,8 @@ The email should contain:
      # Add your commands here
      ```
 
+3. You should have a working `wallet.py` file and the unit tests should run.
+
 ## High level overview
 
 At the end of this homework, you will have a computational workflow consisting
@@ -130,5 +132,5 @@ RUN apt-get -y update && \
    file that checks out your repository and runs the unit tests inside the
    Docker image that you pushed to the DockerHub.
 
-2. Push the `test.yml` file to GitHub. Check that you get the green tick
-   showing that your tests pass.
+3. Push the `.github/workflows/test.yml` file to GitHub. Check that you get the
+   green tick showing that your tests pass.
