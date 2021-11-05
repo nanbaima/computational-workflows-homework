@@ -10,18 +10,19 @@ By email to jack.hale@uni.lu, Subject: Computational Workflows Homework
 You must have attended the course and complete the homework to receive the ECTS
 credits.
 
-The email should contain:
+The email should contain a link to a GitHub repository with:
 
-1. Link to your github repository on github.com.
-2. Your repository should contain a modified version of this file `README.md`
-   file containing the specific commands that you used to complete the
-   exercises. You do not have to include everything, just the key commands.
+* a modified version of this file `README.md` file containing the specific
+  commands that you used to complete the exercises. You do not have to include
+  everything, just the key commands in the spaces provided.
 
-     ```
-     # Add your commands here
-     ```
-
-3. You should have a working `wallet.py` file and the unit tests should run.
+    ```
+    # Add your commands here
+    ```
+* A `wallet.py` file that passes the unit tests.
+* A `Dockerfile`.
+* A working GitHub Actions file that runs the unit tests inside the built
+  image.
 
 ## High level overview
 
@@ -63,7 +64,7 @@ page](https://jhale.github.io/computational-workflows/).
 
 ## Dockerfile
 
-1. Create a file `docker/Dockerfile` in the repository containing the following text.
+1. Create a file `Dockerfile` in the repository containing the following text.
 
 ```
 FROM ubuntu:21.04
@@ -74,7 +75,7 @@ RUN apt-get -y update && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 ```
 
-2. `git add` and `git push` the file `docker/Dockerfile` to the repository.
+2. `git add` and `git push` the file `Dockerfile` to the repository.
 
 ```
 # Add your commands here
