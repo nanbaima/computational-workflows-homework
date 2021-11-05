@@ -35,18 +35,20 @@ of:
 
 3. A simple Python program describing a simple Wallet class and a set of unit tests.
 
-4. A continuous integration setup using GitHub actions.
+4. A continuous integration setup using GitHub Actions.
 
-You can use find the notes I used during the course
-[here](https://github.com/jhale/computational-workflows/blob/master/README_instructor.md).
+For reference, you can use my notes that I used during the course
+[here](https://github.com/jhale/computational-workflows/blob/master/README_instructor.md)
+and the references listed at the bottom of the [main
+page](https://jhale.github.io/computational-workflows/).
 
 ## Setting up a git version control repository
 
-1. Go to https://github.com. Click on the plus icon in the top right hand
-   corner of the screen. Then click on New Repository.
+1. Go to [GitHub](https://github.com). Click on the plus icon in the top right
+   hand corner of the screen. Then click on New Repository.
 
 2. Create a *public* repository called e.g.
-   'jhale/computational-workflows-homework'.
+   `jhale/computational-workflows-homework`.
 
 3. Clone your repository. In a terminal run, e.g.:
 
@@ -107,32 +109,26 @@ RUN apt-get -y update && \
 # Add your commands here
 ```
 
-2. Run the tests inside the container by going to `/root/shared` and running the
+2. Start a Docker container using your image and share your repository into a
+   directory `/root/shared` into the container.
+
+```
+# Add your commands here
+```
+
+3. Run the tests inside the container by going to `/root/shared` and running the
    command `py.test-3`. The tests should fail.
 
-3. Modify ``wallet.py`` until the tests in ``test_wallet.py`` all pass.
+3. In a terminal on the host modify ``wallet.py`` until the tests in
+   ``test_wallet.py`` all pass.
 
 4. ``git add``, ``git commit`` and ``git push`` the working ``wallet.py`` file.
 
 ## GitHub Actions for Continuous Integration
 
-1.
+1. Using the example in the class notes make a `.github/workflows/test.yml`
+   file that checks out your repository and runs the unit tests inside the
+   Docker image that you pushed to the DockerHub.
 
-```
-version: 2.1
-
-jobs:
-  build:
-    docker:
-      - image: jhale/computational-workflows # e.g. the primary container, where your job's commands are run
-    steps:
-      - checkout # check out the code from github in the project directory
-      - run: py.test-3 # run py.test-3 inside the container
-```
-
-## Exercises
-
-1. Write a new test in ``test_wallet.py`` that fails. Push the file to github.
-   What do you see on github.com?
-
-2. Fix the test. What do you see on github.com?
+2. Push the `test.yml` file to GitHub. Check that you get the green tick
+   showing that your tests pass.
