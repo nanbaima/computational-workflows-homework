@@ -4,7 +4,9 @@
 ## Practicalities
 
 By email to [jack.hale@uni.lu](mailto:jack.hale@uni.lu), Subject: Computational
-Workflows Homework
+Workflows Homework.
+
+Please ask questions on the [Etherpad](https://pad.carpentries.org/cwul2021).
 
 *Deadline: 10th December 2021*
 
