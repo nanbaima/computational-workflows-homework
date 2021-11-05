@@ -3,7 +3,8 @@
 
 ## Practicalities
 
-By email to jack.hale@uni.lu, Subject: Computational Workflows Homework
+By email to [jack.hale@uni.lu](mailto:jack.hale@uni.lu), Subject: Computational
+Workflows Homework
 
 *Deadline: 10th December 2021*
 
@@ -14,15 +15,16 @@ The email should contain a link to a GitHub repository with:
 
 * a modified version of this file `README.md` file containing the specific
   commands that you used to complete the exercises. You do not have to include
-  everything, just the key commands in the spaces provided.
+  everything, just the key commands. I have left placeholders where these commands
+  should go:
 
     ```
     # Add your commands here
     ```
 * A `wallet.py` file that passes the unit tests.
 * A `Dockerfile`.
-* A working GitHub Actions file that runs the unit tests inside the built
-  image.
+* A working GitHub Actions file `.github/workflows/test.yml` that runs the unit
+  tests inside the built image.
 
 ## High level overview
 
@@ -42,7 +44,7 @@ of:
 
 For reference, you can use my notes that I used during the course
 [here](https://github.com/jhale/computational-workflows/blob/master/README_instructor.md)
-and the references listed at the bottom of the [main
+and the references listed at the bottom of the [main course
 page](https://jhale.github.io/computational-workflows/).
 
 ## Setting up a git version control repository
