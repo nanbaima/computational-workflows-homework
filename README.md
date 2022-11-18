@@ -8,7 +8,7 @@ Research Workflows Homework.
 
 Please ask questions on the [Etherpad](https://pad.carpentries.org/cwul2022).
 
-*Deadline: 19th December 2021 1800*
+*Deadline: Monday 19th December 2022 1800*
 
 You must have attended the course and complete the homework to receive the ECTS
 credits.
