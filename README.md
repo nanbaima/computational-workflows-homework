@@ -1,14 +1,14 @@
-# Computational Workflows Homework
+# Computational Research Workflows Homework
 ## Doctoral Programme in Science and Engineering (DSSE)
 
 ## Practicalities
 
 By email to [jack.hale@uni.lu](mailto:jack.hale@uni.lu), Subject: Computational
-Workflows Homework.
+Research Workflows Homework.
 
-Please ask questions on the [Etherpad](https://pad.carpentries.org/cwul2021).
+Please ask questions on the [Etherpad](https://pad.carpentries.org/cwul2022).
 
-*Deadline: 10th December 2021*
+*Deadline: 19th December 2021 1800*
 
 You must have attended the course and complete the homework to receive the ECTS
 credits.
