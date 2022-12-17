@@ -83,6 +83,10 @@ RUN apt-get -y update && \
 
 ```
 # Add your commands here
+touch Dockerfile
+vim Dockerfile
+
+# Copy and past the text into the file
 ```
 
 ## Build and push Docker image
