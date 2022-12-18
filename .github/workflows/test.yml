@@ -14,5 +14,3 @@ jobs:
 
       - name: Run tests
         uses: docker://robot101/computational-workflows
-        run: |
-          python3 -m pytest
