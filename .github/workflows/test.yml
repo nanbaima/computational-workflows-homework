@@ -4,11 +4,13 @@ on: [push]
 
 jobs:
   tests:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     container: robot101/computational-workflows:latest
     
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-        with:
-          repository: nanbaima/computational-workflows-homework
+        
+      - name: Run tests
+        run: |
+          python3 -m pytest
