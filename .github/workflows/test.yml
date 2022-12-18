@@ -5,7 +5,7 @@ on: [push]
 jobs:
   tests:
     runs-on: ubuntu-20.04
-    container: nanbaima/computational-workflows-homework
+    container: robot101/computational-workflows-homework
 
     steps:
       - name: Checkout code
