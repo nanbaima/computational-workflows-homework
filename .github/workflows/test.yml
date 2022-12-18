@@ -5,8 +5,7 @@ on: [push]
 jobs:
   tests:
     runs-on: ubuntu-20.04
-    strategy:
-      container: robot101/computational-workflows:latest
+    container: robot101/computational-workflows:latest
     
     steps:
       - name: Checkout code
@@ -14,4 +13,4 @@ jobs:
 
       - name: Run tests
         run: |
-          python3 -m pytest
+          python3 -m py.test-3
