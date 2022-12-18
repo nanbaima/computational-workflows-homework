@@ -1,0 +1,16 @@
+name: Test wallet
+
+on: [push]
+
+jobs:
+  tests:
+    runs-on: ubuntu-20.04
+    container: robot101/computational-workflows:latest
+
+    steps:
+      - name: Checko code
+        uses: actions/checkout@v2
+
+      - name: Run tests
+        run: |
+          python3 -m pytest
