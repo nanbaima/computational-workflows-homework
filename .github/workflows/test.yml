@@ -5,8 +5,6 @@ on: [push]
 jobs:
   tests:
     runs-on: ubuntu-20.04
-    strategy:
-      container: robot101/computational-workflows:latest
 
     steps:
       - name: Checkout code
