@@ -4,10 +4,10 @@ on: [push]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu22.04
     steps:
     - uses: actions/checkout@v2
     - name: Build and test
       uses: docker://robot101/computational-workflows:latest
       with:
-        args: python3 -m pytest
+        args: python -m pytest
