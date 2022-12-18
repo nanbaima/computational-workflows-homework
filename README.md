@@ -86,7 +86,7 @@ RUN apt-get -y update && \
 touch Dockerfile
 vim Dockerfile
 
-# Copy and past the text into the file
+# Copy and paste the text into the file
 ```
 
 ## Build and push Docker image
@@ -97,6 +97,14 @@ vim Dockerfile
 
 ```
 # Add your commands here
+docker build .
+docker images
+#REPOSITORY                   TAG       IMAGE ID       CREATED         SIZE
+#<none>                       <none>    0fe72b1a16d3   8 minutes ago   879MB
+docker tag 0fe72b1a16d3 robot101/computational-workflows
+docker login
+#username and password
+docker push robot101/computational-workflows
 ```
 
 ## Run a container, and share in files from the host.
@@ -107,6 +115,7 @@ vim Dockerfile
 
 ```
 # Add your commands here
+docker run -v $(pwd):/root/shared -ti robot101/computational-workflows
 ```
 
 ## Setup a simple Python test suite
@@ -118,6 +127,10 @@ vim Dockerfile
 
 ```
 # Add your commands here
+docker ps
+#get the container ID
+docker cp wallet.py bf6f6486dae7:/wallet.py
+docker cp test_wallet.py  bf6f6486dae7:/test_wallet.py
 ```
 
 2. Start a Docker container using your image and share your repository into a
