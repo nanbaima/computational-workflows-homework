@@ -8,9 +8,10 @@ jobs:
     container: robot101/computational-workflows:latest
 
     steps:
-      - name: Checko code
+      - name: Checkout code
         uses: actions/checkout@v2
 
       - name: Run tests
+        duses: docker://robot101/computational-workflows
         run: |
           python3 -m pytest
