@@ -13,4 +13,4 @@ jobs:
 
       - name: Run tests
         run: |
-          py.test-3
+             root/shared/py.test-3
