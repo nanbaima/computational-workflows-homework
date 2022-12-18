@@ -138,6 +138,9 @@ docker cp test_wallet.py  bf6f6486dae7:/test_wallet.py
 
 ```
 # Add your commands here
+docker run -v bf6f6486dae7:/root/shared robot101/computational-workflows
+cd /root/shared
+py.test-3
 ```
 
 3. Run the tests inside the container by going to `/root/shared` and running the
