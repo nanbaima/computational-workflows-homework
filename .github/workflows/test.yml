@@ -13,4 +13,5 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run tests
-        uses: docker://robot101/computational-workflows
+        run: |
+          python3 -m pytest
