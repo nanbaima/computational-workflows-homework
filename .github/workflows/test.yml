@@ -3,11 +3,14 @@ name: Test
 on: [push]
 
 jobs:
-  build:
-    runs-on: ubuntu-22.04
+  tests:
+    runs-on: ubuntu
+    container: robot101/jhale-computational-workflows-homework:latest
+
     steps:
-    - uses: actions/checkout@v2
-    - name: Build and test
-      uses: docker://robot101/computational-workflows
-      with:
-        args: python3 -m pytest
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Run tests
+        run: |
+          python3 -m pytest
