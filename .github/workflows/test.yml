@@ -1,16 +1,12 @@
 name: Test
-
 on: [push]
 
 jobs:
-  tests:
-    runs-on: ubuntu:latest
-    container: robot101/computational-workflows:latest
-
+  build:
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Run tests
-        run: |
-          python3 -m pytest
+    - uses: actions/checkout@v2
+    - name: Build and test
+      uses: docker://robot101/computational-workflows:latest
+      with:
+        args: python3 -m pytest
