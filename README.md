@@ -143,6 +143,7 @@ cd /root/shared
 py.test-3
 docker build . --platform linux/amd64
 # Had to rebild the container and push the image back again because the it was with a different OS/ARCH im am running in a Mac M1
+docker push robot101/computational-workflows
 ```
 
 3. Run the tests inside the container by going to `/root/shared` and running the
