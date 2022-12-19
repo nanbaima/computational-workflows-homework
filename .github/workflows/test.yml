@@ -10,4 +10,4 @@ jobs:
     - name: Build and test
       uses: docker://robot101/computational-workflows
       with:
-        args: python -m pytest
+        args: python3 -m pytest
