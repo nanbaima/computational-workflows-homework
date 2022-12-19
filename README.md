@@ -141,6 +141,8 @@ docker cp test_wallet.py  bf6f6486dae7:/test_wallet.py
 docker run -v bf6f6486dae7:/root/shared robot101/computational-workflows
 cd /root/shared
 py.test-3
+docker build . --platform linux/amd64
+# Had to rebild the container and push the image back again because the it was with a different OS/ARCH im am running in a Mac M1
 ```
 
 3. Run the tests inside the container by going to `/root/shared` and running the
