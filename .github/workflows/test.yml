@@ -5,7 +5,7 @@ on: [push]
 jobs:
   tests:
     runs-on: ubuntu
-    container: robot101/jhale-computational-workflows-homework:latest
+    container: robot101/computational-workflows-homework:latest
 
     steps:
       - name: Checkout code
