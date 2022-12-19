@@ -8,6 +8,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build and test
-      uses: docker://robot101/computational-workflows:latest
+      uses: docker://robot101/computational-workflows
       with:
-        args: python3 -m pytest
+        args: python -m pytest
